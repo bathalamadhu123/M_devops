@@ -11,7 +11,7 @@ pipeline {
                sh "sudo cat /etc/passwd"
             }
         }
-        stage("adding user") {
+        stage("Adding user") {
            steps {
             sh "sudo uaeradd jenkins"
            }
