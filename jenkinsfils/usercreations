@@ -6,7 +6,7 @@ pipeline {
                sh "sudo userdel jenkins" 
             }
         }
-        stage("verifiy users") {
+        stage("Verifiy users") {
             steps {
                sh "sudo cat /etc/passwd"
             }
