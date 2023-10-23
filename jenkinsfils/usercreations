@@ -2,23 +2,23 @@ pipeline {
     agent any
     stages {
         stage("deletaing user") {
-            steps{
+            steps {
                sh "sudo userdel jenkins" 
             }
         }
         stage("verifiy users") {
-            steps{
+            steps {
                sh "sudo cat /etc/passwd"
             }
         }
         stage("adding user") {
-           steps{
+           steps {
             sh "sudo uaeradd jenkins"
            }
            
         }
         stage("test") {
-            steps{
+            steps {
              sh'''
              echo a
              echo b
