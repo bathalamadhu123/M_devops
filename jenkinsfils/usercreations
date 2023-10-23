@@ -28,11 +28,11 @@ pipeline {
         }
     }
     post {
-        Success {
+        success {
             echo" The Build is success"
         }
-        Failure {
-            echo" The Build is Failure"
+        failure {
+            echo" The Build is failure"
         }
     }
 }
