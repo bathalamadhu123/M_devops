@@ -1,7 +1,7 @@
 pipeline {
     agent any
     stages {
-        stage("deletaing user") {
+        stage("Deletaing user") {
             steps {
                sh "sudo userdel jenkins" 
             }
