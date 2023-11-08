@@ -1,0 +1,19 @@
+pipeline {
+    agent any
+    stages {
+        stage ("Git clone") {
+            steps {
+                checkout SCM
+            }
+        }
+        stage ("Deployment") {
+            steps {
+                script {
+                sh '''
+                 sudo cp /var/lib/jenkins/workspace/${JOB NAME 01}/index.html/var/www/html/
+                 '''
+              }
+            }
+        }
+    }
+}
